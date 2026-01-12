@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ========== ANALYTICS ========== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+    <!-- ========== SEO & META ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bidule — Bistro Brasserie à Toulouse</title>
+    <meta name="description" content="Le Bidule : bistro brasserie conviviale dans le quartier des Minimes à Toulouse. Tartare signature, tapas, plateaux d'huîtres, desserts maison. Terrasse ombragée. Réservation conseillée.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:title" content="Le Bidule — Bistro Brasserie à Toulouse">
+    <meta property="og:description" content="Le Bidule : bistro brasserie conviviale dans le quartier des Minimes à Toulouse. Tartare signature, tapas, plateaux d'huîtres, desserts maison. Terrasse ombragée. Réservation conseillée.">
+    <meta property="og:url" content="">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- ========== SCHEMA.ORG ========== -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Le Bidule","description":"Le Bidule : bistro brasserie conviviale dans le quartier des Minimes à Toulouse. Tartare signature, tapas, plateaux d'huîtres, desserts maison. Terrasse ombragée. Réservation conseillée.","url":"","telephone":"05 61 21 61 29","address":{"@type":"PostalAddress","streetAddress":"30 Avenue Jean Dagnaux","addressLocality":"Toulouse","postalCode":"31200","addressCountry":"FR"}}</script>
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232C2825' width='100' height='100' rx='12'/><text x='50' y='65' font-size='45' text-anchor='middle' fill='%23B8860B'>B</text></svg>">
+
+    <!-- ========== FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ========== STYLES ========== -->
+    <style>
+:root {
+    --c-bg: #FAF9F7; --c-bg-alt: #FFFFFF; --c-bg-dark: #2C2825; --c-bg-warm: #F5F2EE;
+    --c-accent: #B8860B; --c-accent-dark: #8B6914;
+    --c-text: #2C2825; --c-text-light: #6B6560; --c-text-inv: #FAF9F7; --c-border: #E5E0DA;
+    --ff-display: 'Libre Baskerville', Georgia, serif; --ff-body: 'Source Sans Pro', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--ff-body); font-size: 1rem; line-height: 1.7; color: var(--c-text); background: var(--c-bg); overflow-x: hidden; }
+h1, h2, h3 { font-family: var(--ff-display); font-weight: 500; line-height: 1.2; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; height: auto; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 4rem); }
+.section-label { font-size: .75rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--c-accent); margin-bottom: 1rem; display: inline-block; }
+.section-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: 1rem 2rem; font-size: .875rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; transition: all .4s; border-radius: 2px; }
+.btn--primary { background: var(--c-accent); color: var(--c-text-inv); }
+.btn--primary:hover { background: var(--c-accent-dark); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.15); }
+.btn--outline { background: transparent; color: var(--c-text); border: 2px solid var(--c-text); }
+.btn--outline:hover { background: var(--c-text); color: var(--c-bg); }
+.btn--outline-light { background: transparent; color: var(--c-text-inv); border: 2px solid var(--c-text-inv); }
+.btn--outline-light:hover { background: var(--c-text-inv); color: var(--c-bg-dark); }
+.btn-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 0; transition: all .4s; background: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); }
+.nav.scrolled { background: var(--c-bg-dark); padding: 1rem 0; box-shadow: 0 4px 30px rgba(0,0,0,.15); }
+.nav__inner { display: flex; justify-content: space-between; align-items: center; }
+.nav__brand { display: flex; align-items: center; gap: .75rem; }
+.nav__logo { width: 40px; height: 40px; background: var(--c-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-size: 1.25rem; font-weight: 600; color: var(--c-text-inv); }
+.nav__name { font-family: var(--ff-display); font-size: 1.25rem; font-weight: 500; color: var(--c-text-inv); }
+.nav__links { display: flex; gap: 2rem; align-items: center; }
+.nav__link { font-size: .85rem; font-weight: 500; color: var(--c-text-inv); transition: all .3s; position: relative; }
+.nav__link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--c-accent); transition: width .3s; }
+.nav__link:hover::after { width: 100%; }
+.nav__link:hover { color: var(--c-accent); }
+.nav__cta { padding: .6rem 1.25rem; font-size: .75rem; background: var(--c-accent); color: var(--c-text-inv); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; transition: all .3s; border-radius: 2px; }
+.nav__cta:hover { background: var(--c-text-inv); color: var(--c-bg-dark); transform: translateY(-2px); }
+.nav__burger { display: none; flex-direction: column; gap: 5px; padding: .5rem; }
+.nav__burger span { display: block; width: 24px; height: 2px; background: var(--c-text-inv); transition: all .4s; }
+.nav-mobile { position: fixed; top: 0; right: 0; z-index: 200; width: min(320px, 85vw); height: 100vh; background: var(--c-bg-dark); padding: 5rem 2rem 2rem; transform: translateX(100%); transition: transform .4s; }
+.nav-mobile.open { transform: translateX(0); }
+.nav-mobile a { display: block; padding: 1rem 0; font-family: var(--ff-display); font-size: 1.25rem; color: var(--c-text-inv); border-bottom: 1px solid rgba(255,255,255,.1); transition: all .3s; }
+.nav-mobile a:hover { padding-left: .5rem; color: var(--c-accent); }
+.nav-mobile__cta { display: inline-block; margin-top: 2rem; padding: 1rem 2rem; background: var(--c-accent); color: var(--c-text-inv); font-size: .875rem; font-weight: 600; border-radius: 2px; }
+.nav-overlay { position: fixed; inset: 0; z-index: 150; background: rgba(0,0,0,.5); opacity: 0; visibility: hidden; transition: all .4s; }
+.nav-overlay.visible { opacity: 1; visibility: visible; }
+
+/* ANIMATIONS */
+.fade-in, .fade-in-left, .fade-in-right { opacity: 1; transform: none; }
+.js-loaded .fade-in { opacity: 0; transform: translateY(30px); transition: opacity .6s ease-out, transform .6s ease-out; }
+.js-loaded .fade-in-left { opacity: 0; transform: translateX(-30px); transition: opacity .6s ease-out, transform .6s ease-out; }
+.js-loaded .fade-in-right { opacity: 0; transform: translateX(30px); transition: opacity .6s ease-out, transform .6s ease-out; }
+.js-loaded .fade-in.visible, .js-loaded .fade-in-left.visible, .js-loaded .fade-in-right.visible { opacity: 1; transform: none; }
+.delay-1 { transition-delay: .1s !important; } .delay-2 { transition-delay: .2s !important; } .delay-3 { transition-delay: .3s !important; }
+
+/* HERO */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.hero__bg { position: absolute; inset: 0; background: url('https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/468354671_17986324256758578_4123493575769017743_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=B8ADvCGGFX8Q7kNvwHAq9ow&_nc_oc=AdkFlzF24HJP0GvX-OTqaMgih5CldVxUoLO8XJ0TaE_uKQ2X0e01Oka0ZokdrAMQYfvPuoWlu8da44vXX8HoBmK4&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=jOlV4Z2kMDLyS-VXii6nEQ&oh=00_AfqvHjmhu_GexLTxQpuP6DTo5W6y5ptjqBxZ-zFX9QEyng&oe=696AB680') center/cover; }
+.hero__overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,.5) 0%, rgba(0,0,0,.7) 100%); }
+.hero__content { position: relative; z-index: 1; text-align: center; padding: 2rem; max-width: 900px; }
+.hero__badge { display: inline-flex; align-items: center; gap: .5rem; background: rgba(255,255,255,.1); backdrop-filter: blur(10px); padding: .5rem 1.25rem; border-radius: 50px; margin-bottom: 1.5rem; font-size: .8rem; color: var(--c-text-inv); border: 1px solid rgba(255,255,255,.2); }
+.hero__badge-dot { width: 8px; height: 8px; background: var(--c-accent); border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+.hero__title { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 400; color: var(--c-text-inv); margin-bottom: 1rem; letter-spacing: -.02em; }
+.hero__subtitle { font-size: clamp(1rem, 2.5vw, 1.35rem); color: rgba(255,255,255,.85); margin-bottom: .5rem; max-width: 650px; margin-left: auto; margin-right: auto; }
+.hero__location { font-size: .9rem; color: var(--c-accent); margin-bottom: 2.5rem; display: flex; align-items: center; justify-content: center; gap: .5rem; }
+.hero__location svg { width: 16px; height: 16px; }
+.hero__ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero__scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); color: var(--c-text-inv); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: .5rem; opacity: .7; }
+.hero__scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--c-text-inv), transparent); }
+
+/* TRUST BAR */
+.trust { padding: 1.5rem 0; background: var(--c-bg-dark); border-bottom: 1px solid rgba(255,255,255,.1); }
+.trust__inner { display: flex; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap; }
+.trust__item { display: flex; align-items: center; gap: .5rem; color: var(--c-text-inv); font-size: .85rem; }
+.trust__item svg { width: 20px; height: 20px; color: var(--c-accent); }
+.trust__stars { color: var(--c-accent); letter-spacing: 2px; }
+
+/* STORY */
+.story { padding: 7rem 0; background: var(--c-bg); }
+.story__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.story__image { position: relative; }
+.story__image img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.story__image-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--c-accent); color: var(--c-text-inv); padding: 1.5rem; text-align: center; }
+.story__image-badge-number { font-family: var(--ff-display); font-size: 2.5rem; font-weight: 600; line-height: 1; }
+.story__image-badge-text { font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; }
+.story__text { font-size: 1.05rem; color: var(--c-text-light); margin-bottom: 1.5rem; line-height: 1.9; }
+.story__highlight { background: var(--c-bg-warm); border-left: 3px solid var(--c-accent); padding: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--c-text); }
+.story__signature-name { font-family: var(--ff-display); font-size: 1.5rem; font-style: italic; margin-top: 2rem; }
+.story__cta { margin-top: 2.5rem; }
+
+/* SPECIALTIES */
+.specialties { padding: 7rem 0; background: var(--c-bg-dark); color: var(--c-text-inv); }
+.specialties__header { text-align: center; margin-bottom: 4rem; }
+.specialties__header .section-title { color: var(--c-text-inv); }
+.specialties__header .section-subtitle { color: rgba(255,255,255,.7); max-width: 600px; margin: 0 auto; }
+.specialties__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem; }
+.specialties__card { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); padding: 2.5rem; text-align: center; transition: all .4s; position: relative; overflow: hidden; }
+.specialties__card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--c-accent); transform: scaleX(0); transition: transform .4s; }
+.specialties__card:hover::before { transform: scaleX(1); }
+.specialties__card:hover { background: rgba(255,255,255,.06); transform: translateY(-5px); }
+.specialties__card-icon { width: 50px; height: 50px; margin: 0 auto 1.5rem; background: rgba(255,255,255,.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.specialties__card-title { font-family: var(--ff-display); font-size: 1.35rem; margin-bottom: 1rem; transition: color .3s; }
+.specialties__card:hover .specialties__card-title { color: var(--c-accent); }
+.specialties__card-desc { font-size: .9rem; color: rgba(255,255,255,.7); line-height: 1.7; }
+.specialties__footer { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.1); }
+.specialties__price { font-family: var(--ff-display); font-size: 1.5rem; color: var(--c-accent); margin-bottom: .5rem; }
+.specialties__price-detail { font-size: .9rem; color: rgba(255,255,255,.5); margin-bottom: 2rem; }
+
+/* GALLERY */
+.gallery { padding: 7rem 0; background: var(--c-bg-warm); }
+.gallery__header { text-align: center; margin-bottom: 3rem; }
+.gallery__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.gallery__item { overflow: hidden; aspect-ratio: 1; position: relative; }
+.gallery__item:first-child { grid-column: span 2; grid-row: span 2; }
+.gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+.gallery__item:hover img { transform: scale(1.05); }
+.gallery__cta { text-align: center; margin-top: 3rem; }
+
+/* TESTIMONIALS */
+.testimonials { padding: 7rem 0; background: var(--c-bg); }
+.testimonials__header { text-align: center; margin-bottom: 4rem; }
+.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.testimonials__card { background: var(--c-bg-alt); padding: 2.5rem; border: 1px solid var(--c-border); transition: all .4s; position: relative; }
+.testimonials__card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,.08); }
+.testimonials__card-quote { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 4rem; font-family: var(--ff-display); color: var(--c-accent); opacity: .2; line-height: 1; }
+.testimonials__card-stars { color: var(--c-accent); font-size: 1rem; letter-spacing: 2px; margin-bottom: 1rem; }
+.testimonials__card-text { font-size: 1rem; color: var(--c-text-light); line-height: 1.8; margin-bottom: 1.5rem; font-style: italic; }
+.testimonials__card-author { font-weight: 600; color: var(--c-text); }
+.testimonials__card-source { font-size: .8rem; color: var(--c-text-light); }
+.testimonials__cta { text-align: center; margin-top: 3rem; }
+
+/* CTA BANNER */
+.cta-banner { padding: 5rem 0; background: var(--c-accent); text-align: center; }
+.cta-banner__title { font-family: var(--ff-display); font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--c-text-inv); margin-bottom: 1rem; }
+.cta-banner__subtitle { font-size: 1.1rem; color: rgba(255,255,255,.9); margin-bottom: 2rem; }
+.cta-banner .btn--secondary { background: var(--c-text-inv); color: var(--c-accent); }
+.cta-banner .btn--secondary:hover { background: var(--c-bg-dark); color: var(--c-text-inv); }
+
+/* CONTACT */
+.contact { padding: 7rem 0; background: var(--c-bg-warm); }
+.contact__inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; }
+.contact__item { margin-bottom: 2rem; }
+.contact__item h4 { font-size: .75rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--c-accent); margin-bottom: .5rem; }
+.contact__item p, .contact__item a { color: var(--c-text); font-size: 1.05rem; }
+.contact__item a:hover { color: var(--c-accent); }
+.contact__hours { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--c-border); }
+.contact__hours h4 { font-size: .75rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--c-accent); margin-bottom: 1rem; }
+.contact__hours-row { display: flex; justify-content: space-between; padding: .5rem 0; font-size: .95rem; border-bottom: 1px solid var(--c-border); }
+.contact__cta { margin-top: 2rem; }
+.contact__map { width: 100%; height: 100%; min-height: 400px; border: none; }
+
+/* FORM */
+.form { background: var(--c-bg-dark); padding: 7rem 0; }
+.form__inner { max-width: 550px; margin: 0 auto; text-align: center; }
+.form__header { margin-bottom: 2.5rem; }
+.form__header .section-title { color: var(--c-text-inv); }
+.form__header p { color: rgba(255,255,255,.7); }
+.form__header a { color: var(--c-accent); }
+.form__group { margin-bottom: 1.25rem; text-align: left; }
+.form__label { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--c-accent); margin-bottom: .5rem; }
+.form__input, .form__textarea { width: 100%; padding: 1rem; font-family: var(--ff-body); font-size: 1rem; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); color: var(--c-text-inv); transition: border .4s; border-radius: 2px; }
+.form__input:focus, .form__textarea:focus { outline: none; border-color: var(--c-accent); }
+.form__input::placeholder, .form__textarea::placeholder { color: rgba(255,255,255,.4); }
+.form__textarea { min-height: 120px; resize: vertical; }
+.form__submit { width: 100%; padding: 1.25rem; margin-top: .5rem; }
+
+/* FOOTER */
+.footer { background: var(--c-bg-dark); padding: 3rem 0 2rem; border-top: 1px solid rgba(255,255,255,.1); }
+.footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+.footer__brand { display: flex; align-items: center; gap: .75rem; }
+.footer__logo { width: 36px; height: 36px; background: var(--c-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-size: 1rem; font-weight: 600; color: var(--c-text-inv); }
+.footer__name { font-family: var(--ff-display); font-size: 1.25rem; color: var(--c-text-inv); }
+.footer__social { display: flex; gap: .75rem; }
+.footer__social a { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.2); color: var(--c-text-inv); transition: all .4s; border-radius: 50%; }
+.footer__social a:hover { background: var(--c-accent); border-color: var(--c-accent); }
+.footer__copy { width: 100%; text-align: center; padding-top: 2rem; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,.1); font-size: .8rem; color: rgba(255,255,255,.5); }
+
+/* FLOATING CTA */
+.floating-cta { position: fixed; bottom: 100px; right: 24px; z-index: 90; }
+.floating-cta__btn { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,.2); transition: all .3s; background: #25d366; color: white; }
+.floating-cta__btn:hover { transform: scale(1.1); }
+.floating-cta__btn svg { width: 24px; height: 24px; }
+
+/* CHATBOT */
+.yuca-trigger { position: fixed; bottom: 24px; right: 24px; z-index: 90; width: 60px; height: 60px; border-radius: 50%; background: var(--c-accent); color: var(--c-text-inv); box-shadow: 0 4px 20px rgba(0,0,0,.2); transition: all .3s; display: flex; align-items: center; justify-content: center; }
+.yuca-trigger:hover { transform: scale(1.08); }
+.yuca-trigger svg { width: 26px; height: 26px; }
+.yuca-window { position: fixed; bottom: 100px; right: 24px; z-index: 100; width: 380px; height: 520px; background: var(--c-bg-alt); border-radius: 16px; box-shadow: 0 10px 50px rgba(0,0,0,.2); display: flex; flex-direction: column; overflow: hidden; opacity: 0; visibility: hidden; transform: translateY(20px) scale(.95); transition: all .3s; }
+.yuca-window.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+.yuca-header { background: var(--c-bg-dark); color: var(--c-text-inv); padding: 16px 18px; display: flex; align-items: center; gap: 12px; }
+.yuca-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--c-accent); display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-weight: 600; font-size: 1.1rem; }
+.yuca-header-text { flex: 1; }
+.yuca-header-name { font-weight: 600; font-size: .95rem; }
+.yuca-header-status { font-size: .75rem; opacity: .7; }
+.yuca-close { margin-left: auto; color: var(--c-text-inv); padding: 4px; opacity: .7; transition: opacity .2s; }
+.yuca-close:hover { opacity: 1; }
+.yuca-messages { flex: 1; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: var(--c-bg-warm); }
+.yuca-message { max-width: 85%; padding: 12px 16px; border-radius: 16px; font-size: .9rem; line-height: 1.5; }
+.yuca-message--bot { background: var(--c-bg-alt); border: 1px solid var(--c-border); align-self: flex-start; border-bottom-left-radius: 4px; }
+.yuca-message--user { background: var(--c-accent); color: var(--c-text-inv); align-self: flex-end; border-bottom-right-radius: 4px; }
+.yuca-typing { display: flex; gap: 4px; padding: 12px 16px; background: var(--c-bg-alt); border: 1px solid var(--c-border); border-radius: 16px; align-self: flex-start; border-bottom-left-radius: 4px; }
+.yuca-typing span { width: 8px; height: 8px; border-radius: 50%; background: var(--c-text-light); animation: typingBounce 1.4s infinite; }
+.yuca-typing span:nth-child(2) { animation-delay: .2s; }
+.yuca-typing span:nth-child(3) { animation-delay: .4s; }
+@keyframes typingBounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-4px); } }
+.yuca-quick-replies { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.yuca-quick-reply { padding: 6px 12px; font-size: .8rem; background: var(--c-bg-warm); border: 1px solid var(--c-border); border-radius: 16px; cursor: pointer; transition: all .2s; }
+.yuca-quick-reply:hover { background: var(--c-accent); color: var(--c-text-inv); border-color: var(--c-accent); }
+.yuca-input-area { padding: 12px 16px; background: var(--c-bg-alt); border-top: 1px solid var(--c-border); display: flex; gap: 10px; }
+.yuca-input { flex: 1; padding: 10px 14px; border: 1px solid var(--c-border); border-radius: 20px; font-size: .9rem; font-family: var(--ff-body); background: var(--c-bg); }
+.yuca-input:focus { outline: none; border-color: var(--c-accent); }
+.yuca-send { width: 40px; height: 40px; background: var(--c-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--c-text-inv); transition: background .2s; }
+.yuca-send:hover { background: var(--c-accent-dark); }
+.yuca-send svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .story__inner { grid-template-columns: 1fr; gap: 3rem; }
+    .story__image { order: -1; }
+    .story__image-badge { right: 1rem; bottom: -1rem; }
+    .specialties__grid { grid-template-columns: 1fr; }
+    .testimonials__grid { grid-template-columns: 1fr; }
+    .contact__inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    .nav__links { display: none; }
+    .nav__burger { display: flex; }
+    .hero__title { font-size: clamp(2rem, 10vw, 3rem); }
+    .gallery__grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery__item:first-child { grid-column: span 2; grid-row: span 1; }
+    .trust__inner { gap: 1.5rem; }
+    .floating-cta { bottom: 90px; right: 16px; }
+    .yuca-trigger { width: 54px; height: 54px; bottom: 20px; right: 16px; }
+    .yuca-window { width: calc(100vw - 32px); height: calc(100vh - 140px); bottom: 88px; right: 16px; left: 16px; }
+}
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="#" class="nav__brand">
+                    <span class="nav__name">Le Bidule</span>
+                </a>
+                <div class="nav__links">
+                    <a href="#story" class="nav__link">Le Concept</a>
+                    <a href="#specialties" class="nav__link">La Carte</a>
+                    <a href="#gallery" class="nav__link">Galerie</a>
+                    <a href="#contact" class="nav__link">Contact</a>
+                    <a href="tel:0561216129" class="nav__cta">Réserver</a>
+                </div>
+                <button class="nav__burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-mobile" id="navMobile">
+        <a href="#story">Le Concept</a>
+        <a href="#specialties">La Carte</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:0561216129" class="nav-mobile__cta">Réserver</a>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                <span>Bistro Brasserie — Quartier des Minimes — Toulouse</span>
+            </div>
+            <h1 class="hero__title">Le Bidule</h1>
+            <p class="hero__subtitle">Restaurant local, bar à tapas, cocktails et spiritueux. Un lieu convivial à deux pas du Canal du Midi pour célébrer vos sens.</p>
+            <p class="hero__location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Toulouse — 
+            </p>
+            <div class="hero__ctas">
+                <a href="tel:0561216129" class="btn btn--primary">Réserver</a>
+                <a href="#specialties" class="btn btn--outline-light">Découvrir</a>
+            </div>
+        </div>
+        <a href="#story" class="hero__scroll">Découvrir<span class="hero__scroll-line"></span></a>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="trust">
+        <div class="container">
+            <div class="trust__inner">
+                <div class="trust__item"><span class="trust__stars">★★★★★</span><span>4.6/5 sur Google</span></div>
+                <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Quartier des Minimes, Toulouse</span></div>
+                <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Lun-Ven 9h-22h</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story__inner">
+                <div class="story__image fade-in-left">
+                    <img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/468420915_17986323875758578_4276593446210911115_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9HM6_cmIy1wQ7kNvwGQr032&_nc_oc=AdkVVvvEh4TL6zQUyAK016sZyPg2eNIjDxIyh3dLnLrLWZviOeJ_e9_gwE1Qr8x_yVI4OQBgRJZd8qenoptC0hKq&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=SsrcdYCwnr_mnSX6ZbwvJw&oh=00_Afo6bJKPQanuUClNtj0lsRCPeFtD86KnRWm6ia5tEh6d9g&oe=696AA2EB" alt="Ambiance conviviale du restaurant Le Bidule">
+                </div>
+                <div class="story__content fade-in-right">
+                    <span class="section-label">Le Concept</span>
+                    <h2 class="section-title">La Brasserie de Quartier</h2>
+                    <p class="story__text">Situé à deux pas du Canal du Midi, Le Bidule vous accueille dans son écrin de convivialité où le plaisir gustatif se mêle au plaisir des sens. Notre café-brasserie au sol en damier offre une ambiance décontractée, idéale pour un café, un plat du jour ou une soirée détente.</p>
+                    <div class="story__highlight">« Probablement le meilleur tartare de ma vie ! Une adresse incontournable. »</div>
+                    <p class="story__text">Monsieur B, Madame B et Mister Mat vous reçoivent dans la joie et la bonne humeur. La cuisine aime la mixité des provenances, joue la carte de l'exotisme et nous régale de desserts maison. Le jeudi soir, c'est happy hour ! Terrasse ombragée dans notre cour intérieure.</p>
+                    <p class="story__signature-name">— L'équipe Le Bidule</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALTIES -->
+    <section class="specialties" id="specialties">
+        <div class="container">
+            <div class="specialties__header fade-in">
+                <span class="section-label">La Carte</span>
+                <h2 class="section-title">Nos Spécialités</h2>
+                <p class="specialties__header .section-subtitle">Cuisine française créative et tapas de qualité</p>
+            </div>
+            <div class="specialties__grid">
+                <div class="specialties__card fade-in delay-1">
+                    <h3 class="specialties__card-title">Tartares & Viandes</h3>
+                    <p class="specialties__card-desc">Notre tartare de bœuf signature, côte de bœuf, tataki de bœuf Aubrac, paleron braisé. Des produits frais cuisinés avec passion.</p>
+                </div>
+                <div class="specialties__card fade-in delay-2">
+                    <h3 class="specialties__card-title">Tapas & Planches</h3>
+                    <p class="specialties__card-desc">Plateaux d'huîtres, tapas variés, planches apéritives. Parfait pour partager entre amis autour d'un verre.</p>
+                </div>
+                <div class="specialties__card fade-in delay-3">
+                    <h3 class="specialties__card-title">Desserts Maison</h3>
+                    <p class="specialties__card-desc">Fondant à la pistache, banoffee, parfait glacé, tartelettes aux fruits. Des créations gourmandes pour finir en beauté.</p>
+                </div>
+            </div>
+            <div class="specialties__footer fade-in">
+                <p class="specialties__price">14 - 30€</p>
+                <p class="specialties__price-detail">Formules midi dès 14€</p>
+                <a href="tel:0561216129" class="btn btn--primary">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery__header fade-in">
+                <span class="section-label">Galerie</span>
+                <h2 class="section-title">L'Univers du Bidule</h2>
+            </div>
+            <div class="gallery__grid">
+                <div class="gallery__item"><img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/468365421_17986313615758578_6864395451326026920_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KzpGWPC4pAgQ7kNvwEtz4hA&_nc_oc=AdkXBv8uKBjRGHgabLnhjXPst1xDFuCzDrUKNKm2ICg1gqHdWbwLhan5JbnMajTs3nn_s7ZVeCc2JngT1m--jsoK&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=eCKR43jEh8umD4YiWLJImw&oh=00_Afp6XTX6U_Ce84c3KjKGLXUX-ovE69o61A9fKt-KakUVbA&oe=696AD063" alt="Photo 1"></div>
+                <div class="gallery__item"><img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/476100167_2355906311432651_4331467413373194118_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j_r--1Z54RoQ7kNvwFJRnu5&_nc_oc=AdlqYUS0ixwMJ3o6H0LAKpwwxluJ0h078fEZ-rWfZ4IotZLIOOdgQFQXi_mH3qyP299nq-9HZg0IQC25mIYfh8rv&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=cRlH0BFgVo1MsZ1eVIOSpQ&oh=00_Afrw2BEBGJfn01X9qFbreVeonRPmpecg5ChSFx9NIxt5BQ&oe=696AD12C" alt="Photo 2"></div>
+                <div class="gallery__item"><img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/475815664_2354173828272566_6360278895483400948_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Jj65LR0rP44Q7kNvwFdm4u2&_nc_oc=Adn1Rpph1SKj3CfWefjoLWOuJAe5Ex5nnFWwsDpazlVdzu2IPm99IWE2ham1lWOi_WBq2Rr6UDaP69fDSTRwnzu8&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=8__hY2a9w9rb2fZAQKtZZA&oh=00_AfpEZlO7pcM-7b1HhRPgI7ok2hRTd-sat6W7TwbnU2gIHw&oe=696ACA26" alt="Photo 3"></div>
+                <div class="gallery__item"><img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/481182048_1091804496295674_204665565225435195_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pX5J_JBeZb4Q7kNvwEefKyY&_nc_oc=AdkSK5NmkugDraapL1Da0pKo36Wz2GQmoP71GjAIL8LON7XU2Xt_9RZVFbuX7XX61q_xMfgXGpJFq3v65OgM-y0m&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=jk9o_g8x5IW9A4DBVUV9tA&oh=00_AfpAUw5-bajvDcBBoHAuaG44XCGi4TNsfnTsyHaxKR-vTg&oe=696AD0D8" alt="Photo 4"></div>
+                <div class="gallery__item"><img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/476032859_2355906068099342_8989028351828146742_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=s1a3WMvYNWAQ7kNvwFgGr4o&_nc_oc=Adm_p5HS3eUd9Lq4KEy_Vd1pe06b7zomEQhUWtLPLcMCXHFDcsPqfHf1-DnQ6jegDKDtFJE0uVdOy4jZ3hbTZYk1&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=01DMjPmjc4LcN3BqvXMVNg&oh=00_AfqaBBvrjvGccwpuTaG7iFj1mgqEMlcZUfUraibZ6G2J5Q&oe=696A9D3D" alt="Photo 5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials__header fade-in">
+                <span class="section-label">Avis Clients</span>
+                <h2 class="section-title">Ce qu'ils en disent</h2>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonials__card fade-in delay-1">
+                    <span class="testimonials__card-quote">"</span>
+                    <div class="testimonials__card-stars">★★★★★</div>
+                    <p class="testimonials__card-text">Super, même en hiver ! Je me suis fié aux commentaires et n'ai pas été déçu : probablement le meilleur tartare de ma vie !</p>
+                    <p class="testimonials__card-author">Client Google</p>
+                    <p class="testimonials__card-source">Google</p>
+                </div>
+                <div class="testimonials__card fade-in delay-2">
+                    <span class="testimonials__card-quote">"</span>
+                    <div class="testimonials__card-stars">★★★★★</div>
+                    <p class="testimonials__card-text">Très bon petit restaurant de quartier. Accueil bienveillant, cadre chaleureux et excellente cuisine. Je conseille le tartare de bœuf !</p>
+                    <p class="testimonials__card-author">Client TripAdvisor</p>
+                    <p class="testimonials__card-source">TripAdvisor</p>
+                </div>
+                <div class="testimonials__card fade-in delay-3">
+                    <span class="testimonials__card-quote">"</span>
+                    <div class="testimonials__card-stars">★★★★★</div>
+                    <p class="testimonials__card-text">J'adore ! Superbes plats, peu de choix mais de qualité. Le service est super, ils sont à l'écoute et souriants, on s'y sent bien.</p>
+                    <p class="testimonials__card-author">Blandine P.</p>
+                    <p class="testimonials__card-source">Google</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-banner__title">Une table conviviale vous attend</h2>
+            <p class="cta-banner__subtitle">Pensez à réserver, surtout pour le déjeuner !</p>
+            <a href="tel:0561216129" class="btn btn--secondary">05 61 21 61 29</a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__info fade-in-left">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Nous Trouver</h2>
+                    <div class="contact__item"><h4>Adresse</h4><p>30 Avenue Jean Dagnaux<br>31200 Toulouse</p></div>
+                    <div class="contact__item"><h4>Téléphone</h4><a href="tel:0561216129">05 61 21 61 29</a></div>
+                    <div class="contact__item"><h4>Instagram</h4><a href="https://www.instagram.com/le_bdl_restaurant/" target="_blank">@le_bdl_restaurant</a></div>
+                    <div class="contact__hours"><h4>Horaires d'ouverture</h4><div class="contact__hours-row"><span>Lundi - Jeudi</span><span>09h00 - 22h00</span></div>
+<div class="contact__hours-row"><span>Vendredi</span><span>09h00 - 23h00</span></div>
+<div class="contact__hours-row"><span>Samedi - Dimanche</span><span>Fermé</span></div></div>
+                </div>
+                <iframe class="contact__map fade-in-right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.5!2d1.4277210!3d43.6165028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb444aefea53%3A0x89d7e56499c282fb!2sLe%20Bidule!5e0!3m2!1sfr!2sfr!4v1700000000000" allowfullscreen loading="lazy" title="Localisation"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form" id="reservation">
+        <div class="container">
+            <div class="form__inner">
+                <div class="form__header">
+                    <span class="section-label">Réservation</span>
+                    <h2 class="section-title">Réservez votre table</h2>
+                    <p>Réservation conseillée par téléphone, surtout pour le déjeuner <a href="tel:0561216129">05 61 21 61 29</a></p>
+                </div>
+                <form id="contactForm">
+                    <div class="form__group"><label class="form__label" for="name">Nom</label><input class="form__input" type="text" id="name" placeholder="Votre nom" required></div>
+                    <div class="form__group"><label class="form__label" for="email">Email</label><input class="form__input" type="email" id="email" placeholder="votre@email.com" required></div>
+                    <div class="form__group"><label class="form__label" for="phone">Téléphone</label><input class="form__input" type="tel" id="phone" placeholder="06 XX XX XX XX"></div>
+                    <div class="form__group"><label class="form__label" for="message">Message</label><textarea class="form__textarea" id="message" placeholder="Votre message..."></textarea></div>
+                    <button type="submit" class="btn btn--primary form__submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand"><span class="footer__logo">B</span><span class="footer__name">Le Bidule</span></div>
+                <div class="footer__social"><a href="https://www.instagram.com/le_bdl_restaurant/" target="_blank" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772 4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.772-1.153 4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5-9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a><a href="https://www.facebook.com/restaurantlebiduletoulouse/" target="_blank" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg></a></div>
+            </div>
+            <p class="footer__copy">© 2026 Le Bidule. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CTA -->
+    <div class="floating-cta">
+        <a href="tel:0561216129" class="floating-cta__btn" aria-label="Appeler">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+    </div>
+
+    <!-- CHATBOT -->
+    <button class="yuca-trigger" id="yucaTrigger" aria-label="Chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <div class="yuca-window" id="yucaWindow">
+        <div class="yuca-header">
+            <div class="yuca-avatar">B</div>
+            <div class="yuca-header-text"><div class="yuca-header-name">Le Bidule</div><div class="yuca-header-status">En ligne • Répond instantanément</div></div>
+            <button class="yuca-close" id="yucaClose"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+        <div class="yuca-messages" id="yucaMessages"></div>
+        <div class="yuca-input-area">
+            <input type="text" class="yuca-input" id="yucaInput" placeholder="Posez votre question...">
+            <button class="yuca-send" id="yucaSend"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+    const today = new Date();
+    const days = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+    const dayName = days[today.getDay()];
+    const dateStr = today.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+    const CFG = { name: 'Le Bidule', prompt: `Nous sommes ${dayName} ${dateStr}. Tu es l'assistant virtuel du restaurant Le Bidule, bistro brasserie de quartier à Toulouse. Tu représentes l'établissement. Réponds TOUJOURS dans la langue du client (français, anglais, espagnol...). FUSEAU HORAIRE : Europe/Paris (heure française). Adresse : 30 Avenue Jean Dagnaux, 31200 Toulouse, quartier des Minimes, à 5 min du métro Canal du Midi (ligne B). Téléphone réservation : 05 61 21 61 29 ou 06 15 06 67 59. Horaires : Lundi à jeudi 9h-22h. Vendredi 9h-23h. Fermé samedi et dimanche. Spécialités : tartare de bœuf (signature), tapas, plateaux d'huîtres, cuisine française créative, desserts maison (fondant pistache, banoffee). Happy hour le jeudi soir. Grande salle 80 couverts + terrasse ombragée 30 places dans la cour intérieure. Prix : formules midi dès 14€, carte 20-30€. Réservation conseillée par téléphone. Réponds en 2-3 phrases max, sois convivial et décontracté. Termine par [SUGGESTIONS:Réserver|Horaires|La carte]`, welcome: 'Bienvenue au Bidule ! Comment puis-je vous aider ?', suggestions: ['Réserver','Horaires','La carte'] };
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50));
+    const burger = document.getElementById('navBurger'), mobNav = document.getElementById('navMobile'), overlay = document.getElementById('navOverlay');
+    function toggleNav() { mobNav.classList.toggle('open'); overlay.classList.toggle('visible'); document.body.style.overflow = mobNav.classList.contains('open') ? 'hidden' : ''; }
+    burger.onclick = toggleNav; overlay.onclick = toggleNav; mobNav.querySelectorAll('a').forEach(a => a.onclick = toggleNav);
+    document.getElementById('contactForm').onsubmit = async function(e) {
+        e.preventDefault(); const btn = this.querySelector('button[type="submit"]'); const txt = btn.textContent; btn.textContent = 'Envoi...'; btn.disabled = true;
+        try { await fetch('https://yuca-api.vercel.app/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ business: CFG.name, name: document.getElementById('name').value, email: document.getElementById('email').value, phone: document.getElementById('phone').value, message: document.getElementById('message').value, source: 'site-' + CFG.name.toLowerCase().replace(/\s+/g, '-') }) }); btn.textContent = '✓ Envoyé !'; this.reset(); setTimeout(() => { btn.textContent = txt; btn.disabled = false; }, 3000); } catch (err) { btn.textContent = 'Erreur'; setTimeout(() => { btn.textContent = txt; btn.disabled = false; }, 2000); }
+    };
+    const trigger = document.getElementById('yucaTrigger'), win = document.getElementById('yucaWindow'), closeBtn = document.getElementById('yucaClose'), msgBox = document.getElementById('yucaMessages'), input = document.getElementById('yucaInput'), sendBtn = document.getElementById('yucaSend');
+    let msgs = [], isOpen = false;
+    function toggle() { isOpen = !isOpen; win.classList.toggle('open', isOpen); if (isOpen && !msgs.length) addBot(CFG.welcome, CFG.suggestions); }
+    trigger.onclick = toggle; closeBtn.onclick = toggle;
+    function addBot(t, sugg) { const d = document.createElement('div'); d.className = 'yuca-message yuca-message--bot'; let h = t; if (sugg?.length) { h += '<div class="yuca-quick-replies">'; sugg.forEach(s => h += `<button class="yuca-quick-reply" data-q="${s}">${s}</button>`); h += '</div>'; } d.innerHTML = h; msgBox.appendChild(d); msgBox.scrollTop = msgBox.scrollHeight; d.querySelectorAll('.yuca-quick-reply').forEach(b => b.onclick = () => send(b.dataset.q)); msgs.push({ role: 'assistant', content: t }); }
+    function addUser(t) { const d = document.createElement('div'); d.className = 'yuca-message yuca-message--user'; d.textContent = t; msgBox.appendChild(d); msgBox.scrollTop = msgBox.scrollHeight; msgs.push({ role: 'user', content: t }); }
+    function showTyping() { const d = document.createElement('div'); d.className = 'yuca-typing'; d.id = 'yucaTyping'; d.innerHTML = '<span></span><span></span><span></span>'; msgBox.appendChild(d); msgBox.scrollTop = msgBox.scrollHeight; }
+    function hideTyping() { document.getElementById('yucaTyping')?.remove(); }
+    async function send(text) { const t = text || input.value.trim(); if (!t) return; input.value = ''; addUser(t); showTyping(); try { const res = await fetch('https://yuca-api.vercel.app/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ system: CFG.prompt, messages: msgs.map(m => ({ role: m.role, content: m.content })) }) }); const data = await res.json(); hideTyping(); let resp = data.content?.[0]?.text || 'Désolé, je n\'ai pas compris.'; let sugg = null; const m = resp.match(/\[SUGGESTIONS?:(.+?)\]/i); if (m) { sugg = m[1].split('|').map(s => s.trim()); resp = resp.replace(m[0], '').trim(); } addBot(resp, sugg); } catch (e) { hideTyping(); addBot('Désolé, problème technique. Appelez-nous directement.', ['Appeler']); } }
+    sendBtn.onclick = () => send(); input.onkeypress = e => { if (e.key === 'Enter') send(); };
+    document.body.classList.add('js-loaded');
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
